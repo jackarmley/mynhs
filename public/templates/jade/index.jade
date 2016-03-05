@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        title= locals.title
+        link(rel="stylesheet" href="./css/styles.css")
+    body
+        header.site-header(role="banner")
+            .container
+                a.site-logo(href="./index.html")
+                    != locals.title
