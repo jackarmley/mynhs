@@ -1,4 +1,8 @@
 # newnatives2016-hospitalvisitors
 NHS navigation hack
 
-Project file
+- @Dafin
+- @ClaudioCarmeli
+- @lambro
+- @sarahcwalpole
+- @Biscuitnapper
