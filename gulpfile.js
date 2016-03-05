@@ -1,14 +1,14 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
-    path = require('path')
+    path = require('path'),
     connect = require('gulp-connect');
 
 var assets = {
-    styles : './node_modules/bootstrap/less/'
-}
+    styles : './public/css/less/'
+};
 
 gulp.task('less', function () {
-  return gulp.src('./node_modules/bootstrap/less/bootstrap.less')
+  return gulp.src(assets.styles + 'styles.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
