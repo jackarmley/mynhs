@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title= locals.title
+        link(rel="stylesheet" href="./css/styles.css")
+    body
+        header.site-header(role="banner")
+            block header
+                a.site-logo(href="./index.html")
+                    span(aria-hidden="true") My NHS
+        .site-content
+            block content

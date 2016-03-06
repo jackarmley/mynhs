@@ -11,7 +11,30 @@ var assets = {
 };
 
 var locals = {
-    title : 'My NHS'
+    title : 'My NHS',
+    tagline: 'Helps you navigate the UK healthcare system',
+    paths: {
+        before: {
+            icon: 'before',
+            desc: 'before you go to a hospital'
+        },
+        gettingthere: {
+            icon: 'gettingthere',
+            desc: 'getting to a hosital'
+        },
+        appointment: {
+            icon: 'appointment',
+            desc: 'appointment'
+        },
+        staying: {
+            icon: 'staying',
+            desc: 'staying in a hosital'
+        },
+        leaving: {
+            icon: 'leaving',
+            desc: 'leaving a hospital'
+        }
+    }
 };
 
 gulp.task('less', function () {

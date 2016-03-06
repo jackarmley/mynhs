@@ -1,9 +1,123 @@
 // Bespoke styles
 
+@keycolor: #df665b;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+// Icons
+[data-icon]{
+    display: inline-block;
+    width: 12.8rem;
+    height: 12.8rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-icon="before"]{
+    background-image:url('../images/before.png');
+}
+[data-icon="gettingthere"]{
+    background-image:url('../images/gettingthere.png');
+}
+[data-icon="appointment"]{
+    background-image:url('../images/appointment.png');
+}
+[data-icon="staying"]{
+    background-image:url('../images/staying.png');
+}
+[data-icon="leaving"]{
+    background-image:url('../images/leaving.png');
+}
+
+// Components
+.paths{
+    margin: 0 auto 1em;
+    padding: 0;
+    text-align: center;
+    li{
+        display: inline-block;
+        margin: 0 .5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.paths-menu{
+    margin: 0 auto 1em;
+    padding: 0;
+    li{
+        display: inline;
+    }
+    a{
+        display: block;
+        padding: 1rem;
+    }
+    [data-icon]{
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.languagechooser{
+    font-size: 1.5em;
+    label{
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    select{
+        margin-left: 5%;
+        width: 95% !important;
+    }
+    .btnwrap{
+        text-align: center;
+        .btn{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    .input-group-addon{
+        min-width: 3rem;
+        border: none;
+        background: transparent url('../images/UK-Union-Flag.png') no-repeat center center/contain;
+    }
+}
+
+// Main
+
+html{
+    height: 100%;
+}
+body{
+    max-width: 40rem;
+    height: 100%;
+    margin: auto;
+    padding: 2rem;
+    background: linear-gradient(to bottom, @keycolor, fadeout(@keycolor,100%) );
+    font-family: 'Open sans', sans-serif;
+}
+
+[aria-hidden="true"]{
+    display: none;
+}
+
 .site-header{
-
+    margin-bottom: 2rem;
+    text-align: center;
+    > *{
+        display: block;
+    }
 }
-
-.site-logo{
-
-}
+    .site-logo{
+        width: 12.3rem;
+        height: 3.5rem;
+        margin: 0 auto 2rem;
+        background: url('../images/MyNHS.png') no-repeat top left;
+    }
+    .site-tagline{
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1.5em;
+    }

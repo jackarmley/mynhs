@@ -1,10 +1,22 @@
-doctype html
-html
-    head
-        title= locals.title
-        link(rel="stylesheet" href="./css/styles.css")
-    body
-        header.site-header(role="banner")
-            .container
-                a.site-logo(href="./index.html")
-                    != locals.title
+extends views/master
+block header
+    a.site-logo(href="./index.html")
+        span(aria-hidden="true") My NHS
+    span.site-tagline= locals.tagline
+    ul.paths
+        -each path in paths
+            li(data-icon=path.icon)
+
+block content
+    .languagechooser
+        .form-group
+            label Select your language
+            .input-group
+                .input-group-addon
+                select(type="text" class="form-control")
+                    option(value="English") English
+                    option(value="Arabic") Arabic
+                    option(value="Greek") Greek
+        .btnwrap
+            a.btn.btn-danger.btn-lg(href="./landing.html") Next
+
